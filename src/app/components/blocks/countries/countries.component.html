@@ -1,19 +1,16 @@
-<form [formGroup]="forecastForm">
-    <table class="mat-elevation-z8">
+<table class="mat-elevation-z8">
 
-        <thead>
-            <tr>
-                <td>Flag</td>
-                <td>Country</td>
-            </tr>
-        </thead>
+    <thead>
+        <tr>
+            <td>Flag</td>
+            <td>Country</td>
+        </tr>
+    </thead>
 
-        <tbody formArrayName="forecastFormArray">
-            <tr *ngFor="let f of forecast.controls; let i = index;" [formGroupName]="i">
-                <td> {{f.get('countryFlag').value}} </td>
-                <td> {{f.get('countryCode').value}} </td>
-            </tr>
-        </tbody>
-    </table>
-
-</form>
+    <tbody>
+        <tr *ngFor="let f of forecast.controls; let i = index;">
+            <td> {{f.get('countryFlag').value}} </td>
+            <td> {{f.get('countryCode').value}} </td>
+        </tr>
+    </tbody>
+</table>
