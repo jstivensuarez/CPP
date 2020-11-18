@@ -1,0 +1,20 @@
+<h2>Site cost data</h2>
+
+<div class="container">
+    <div class="row">
+      <div class="col-3">
+        <app-countries [forecast]="forecast"></app-countries>
+      </div>
+      <div class="col-3">
+        <app-quantity [forecast]="forecast"></app-quantity>
+      </div>
+      <div class="col-3">
+        <app-cpp-total></app-cpp-total>
+      </div>
+      <div class="col-3">
+        <app-total-cost></app-total-cost>
+      </div>
+    </div>
+  </div>
+
+  <app-totals-section></app-totals-section>

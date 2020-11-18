@@ -1,0 +1,15 @@
+<table mat-table [dataSource]="forecast.controls" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="flag">
+        <th mat-header-cell *matHeaderCellDef> Flag</th>
+        <td mat-cell *matCellDef="let element"> {{element.get('countryFlag').value}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="code">
+        <th mat-header-cell *matHeaderCellDef> Country</th>
+        <td mat-cell *matCellDef="let element"> {{element.get('countryCode').value}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
