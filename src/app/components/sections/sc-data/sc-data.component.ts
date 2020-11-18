@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormArray, FormGroup } from '@angular/forms';
-import { Forecast } from '../../cpp-tool/dto/forecast';
 
 @Component({
   selector: 'app-sc-data',
@@ -10,7 +9,7 @@ import { Forecast } from '../../cpp-tool/dto/forecast';
 export class ScDataComponent implements OnInit {
 
   @Input() forecast: FormArray;
-  
+  @Input() forecastForm: FormGroup;
   constructor() { }
 
   ngOnInit(): void {

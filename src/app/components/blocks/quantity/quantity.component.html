@@ -3,14 +3,14 @@
 
         <thead>
             <tr>
-                <td> Number of subjects</td>
+                <td>{{title}}</td>
                 <td>Source</td>
             </tr>
         </thead>
 
         <tbody formArrayName="forecastFormArray">
             <tr *ngFor="let f of forecast.controls; let i = index;" [formGroupName]="i">
-                <td>  <input matInput type="text" formControlName="subjects"> </td>
+                <td>  <input matInput type="text" formControlName={{formControlName}}> </td>
                 <td> {{f.get('source').value}} </td>
             </tr>
         </tbody>

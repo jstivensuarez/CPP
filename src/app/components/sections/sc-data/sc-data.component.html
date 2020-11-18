@@ -1,20 +1,23 @@
 <h2>Site cost data</h2>
 
 <div class="container">
-    <div class="row">
-      <div class="col-3">
-        <app-countries [forecast]="forecast"></app-countries>
-      </div>
-      <div class="col-3">
-        <app-quantity [forecast]="forecast"></app-quantity>
-      </div>
-      <div class="col-3">
-        <app-cpp-total></app-cpp-total>
-      </div>
-      <div class="col-3">
-        <app-total-cost></app-total-cost>
-      </div>
+  <div class="row">
+    <div class="col-3">
+      <app-countries [forecast]="forecast"></app-countries>
+    </div>
+    <div class="col-3">
+      <app-quantity [forecast]="forecast" [forecastForm]="forecastForm" [isSiteCost]="true"></app-quantity>
+    </div>
+    <div class="col-3">
+      <app-cpp-total [forecast]="forecast" [isSiteCost]="true"></app-cpp-total>
+    </div>
+    <div class="col-3">
+      <app-total-cost [forecast]="forecast" [isSiteCost]="true"></app-total-cost>
     </div>
   </div>
+</div>
 
-  <app-totals-section></app-totals-section>
+<br>
+<br>
+
+<app-totals-section></app-totals-section>
