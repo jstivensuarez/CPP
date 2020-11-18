@@ -16,7 +16,6 @@ export class CountriesComponent implements OnInit {
 
   displayedColumns: string[] = ['flag', 'code'];
   @Input() forecast: FormArray;
-  @Input() forecastForm: FormGroup;
   
   constructor() { }
   ngOnInit(): void {
