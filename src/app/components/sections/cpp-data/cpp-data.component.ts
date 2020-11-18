@@ -10,6 +10,7 @@ import { Forecast } from '../../cpp-tool/dto/forecast';
 export class CppDataComponent implements OnInit {
 
   @Input() forecast: FormArray;
+  @Input() forecastForm: FormGroup;
   
   constructor() { }
 

@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { FormArray } from '@angular/forms';
+import { FormArray, FormGroup } from '@angular/forms';
 import { Forecast } from '../../cpp-tool/dto/forecast';
 
 export interface Country {
@@ -16,7 +16,8 @@ export class CountriesComponent implements OnInit {
 
   displayedColumns: string[] = ['flag', 'code'];
   @Input() forecast: FormArray;
-
+  @Input() forecastForm: FormGroup;
+  
   constructor() { }
   ngOnInit(): void {
   }

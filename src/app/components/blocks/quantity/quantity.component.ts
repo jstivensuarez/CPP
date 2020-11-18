@@ -12,6 +12,7 @@ export class QuantityComponent implements OnInit {
 
   displayedColumns: string[] = ['subjects', 'source'];
   @Input() forecast: FormArray;
+  @Input() forecastForm: FormGroup;
 
   constructor() { }
 
