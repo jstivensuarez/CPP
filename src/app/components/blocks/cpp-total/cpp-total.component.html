@@ -1,1 +1,18 @@
-<p>cpp-total works!</p>
+<table class="mat-elevation-z8">
+
+    <thead>
+        <tr>
+            <td>Med</td>
+            <td>Med</td>
+            <td>High</td>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let f of forecast.controls; let i = index;">
+            <td> {{getCompanyMedian(f)}} </td>
+            <td> {{getMedian(f)}} </td>
+            <td> {{getHigh(f)}} </td>
+        </tr>
+    </tbody>
+</table>

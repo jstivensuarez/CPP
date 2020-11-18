@@ -3,9 +3,9 @@ import { FormArray, FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { Forecast } from './dto/forecast';
 
 const FORECAST: Forecast[] = [
-  { countryFlag: 'COL', countryCode: 'Colombia', subjects: 1, sites: 1, source: 'Actual', companyMedian: 1000, median: 1000, high: 1000, scSource: 'Actual', scCompanyMedian: 1000, scMedian: 1000, scHigh: 1000 },
-  { countryFlag: 'ARG', countryCode: 'Argentina', subjects: 2, sites: 2, source: 'Modeled', companyMedian: 1000, median: 1000, high: 1000, scSource: 'Actual', scCompanyMedian: 1000, scMedian: 1000, scHigh: 1000 },
-  { countryFlag: 'US', countryCode: 'United States', subjects: 3, sites: 3, source: 'Actual', companyMedian: 1000, median: 1000, high: 1000, scSource: 'Modeled', scCompanyMedian: 1000, scMedian: 1000, scHigh: 1000 },
+  { countryFlag: 'COL', countryCode: 'Colombia', subjects: 1, sites: 1, source: 'Actual', companyMedian: 1052254, median: 1227060, high: 1740000, scSource: 'Actual', scCompanyMedian: 111111, scMedian: 44444, scHigh: 7777 },
+  { countryFlag: 'ARG', countryCode: 'Argentina', subjects: 2, sites: 2, source: 'Modeled', companyMedian: 89109, median: 105816, high: 144802, scSource: 'Actual', scCompanyMedian: 22222, scMedian: 55555, scHigh: 8888 },
+  { countryFlag: 'US', countryCode: 'United States', subjects: 3, sites: 3, source: 'Actual', companyMedian: 17000, median: 20000, high: 27000, scSource: 'Modeled', scCompanyMedian: 33333, scMedian: 66666, scHigh: 9999 },
 ];
 
 @Component({

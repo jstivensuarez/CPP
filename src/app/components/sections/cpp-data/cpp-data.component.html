@@ -6,13 +6,13 @@
       <app-countries [forecast]="forecast"></app-countries>
     </div>
     <div class="col-3">
-      <app-quantity [forecast]="forecast" [forecastForm]="forecastForm"></app-quantity>
+      <app-quantity [forecast]="forecast" [forecastForm]="forecastForm" [isSiteCost]="false"></app-quantity>
     </div>
     <div class="col-3">
-      <app-cpp-total></app-cpp-total>
+      <app-cpp-total [forecast]="forecast" [isSiteCost]="false"></app-cpp-total>
     </div>
     <div class="col-3">
-      <app-total-cost></app-total-cost>
+      <app-total-cost [forecast]="forecast" [isSiteCost]="false" ></app-total-cost>
     </div>
   </div>
 </div>

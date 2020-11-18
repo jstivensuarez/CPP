@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "CPP-TEST"
+  "defaultProject": "CPP-TEST",
+  "cli": {
+    "analytics": false
+  }
 }
