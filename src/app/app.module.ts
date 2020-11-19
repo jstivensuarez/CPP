@@ -9,7 +9,6 @@ import { TotalsComponent } from './components/sections/totals/totals.component';
 import { CppToolComponent } from './components/cpp-tool/cpp-tool.component';
 import { QuantityComponent } from './components/blocks/quantity/quantity.component';
 import { CppTotalComponent } from './components/blocks/cpp-total/cpp-total.component';
-import { TotalCostComponent } from './components/blocks/total-cost/total-cost.component';
 import { TotalsSectionComponent } from './components/blocks/totals-section/totals-section.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -52,7 +51,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CppToolComponent,
     QuantityComponent,
     CppTotalComponent,
-    TotalCostComponent,
     TotalsSectionComponent,
   ],
   imports: [
