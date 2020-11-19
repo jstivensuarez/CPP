@@ -8,7 +8,7 @@ import { GenericForecast } from '../../cpp-tool/dto/generic-forecast';
   styleUrls: ['./cpp-total.component.css']
 })
 export class CppTotalComponent implements OnInit {
-  @Input() forecast: GenericForecast[];
+  @Input() totals: any[];
   
   constructor() { }
 

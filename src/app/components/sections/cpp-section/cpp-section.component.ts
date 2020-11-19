@@ -18,4 +18,23 @@ export class CppSectionComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  get cppTotals(){
+    return this.forecast.map(f => (
+      {
+        companyMedian: f.companyMedian,
+        median: f.median,
+        high: f.high
+      }
+    ))
+  }
+
+  get totals(){
+    return this.forecast.map(f => (
+      {
+        companyMedian: f.companyMedian * f.quantity,
+        median: f.median * f.quantity,
+        high: f.high * f.quantity
+      }
+    ))
+  }
 }
