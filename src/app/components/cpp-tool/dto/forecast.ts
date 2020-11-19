@@ -1,15 +1,16 @@
 export interface Forecast {
-    id: number,
-    countryFlag: string,
-    countryCode: string,
-    subjects: number,
-    sites: number,
+    name: string,
+    code: string,
+    flag: string,
+    exchangeRate: number,
+    number: number,
     source: string,
+    modeled: Benchmark,
+    actual: Benchmark
+}
+
+interface Benchmark {
     companyMedian: number,
     median: number,
-    high: number,
-    scSource: string,
-    scCompanyMedian: number,
-    scMedian: number,
-    scHigh: number
+    high: number
 }

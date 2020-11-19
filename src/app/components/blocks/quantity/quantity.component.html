@@ -9,7 +9,7 @@
 
     <tbody>
         <tr *ngFor="let f of forecast;">
-            <td> <input type="text" (keyup)="onQuantityChange(f.id, $event)" value="{{f.quantity}}"></td>
+            <td> <input type="text" (keyup)="onQuantityChange(f.code, $event)" value="{{f.number}}"></td>
             <td> {{f.source}} </td>
         </tr>
     </tbody>

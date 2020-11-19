@@ -1,6 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { FormArray, FormGroup } from '@angular/forms';
-import { Forecast } from '../../cpp-tool/dto/forecast';
 import { GenericForecast } from '../../cpp-tool/dto/generic-forecast';
 
 export interface Country {

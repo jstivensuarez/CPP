@@ -19,8 +19,8 @@ export class QuantityComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onQuantityChange(id: number, event: any){
-    const forecastReference = this.forecast.find(f => f.id == id);
-    forecastReference.quantity = event.target.value;
+  onQuantityChange(code: string, event: any){
+    const forecastReference = this.forecast.find(f => f.code == code);
+    forecastReference.number = event.target.value;
   }
 }
