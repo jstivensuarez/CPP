@@ -1,4 +1,5 @@
 export interface Forecast {
+    id: number,
     countryFlag: string,
     countryCode: string,
     subjects: number,

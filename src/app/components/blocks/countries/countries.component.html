@@ -8,9 +8,9 @@
     </thead>
 
     <tbody>
-        <tr *ngFor="let f of forecast.controls; let i = index;">
-            <td> {{f.get('countryFlag').value}} </td>
-            <td> {{f.get('countryCode').value}} </td>
+        <tr *ngFor="let f of forecast;">
+            <td> {{f.countryFlag}} </td>
+            <td> {{f.countryCode}} </td>
         </tr>
     </tbody>
 </table>

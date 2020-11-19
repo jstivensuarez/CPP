@@ -9,10 +9,10 @@
     </thead>
 
     <tbody>
-        <tr *ngFor="let f of forecast.controls; let i = index;">
-            <td> {{getCompanyMedian(f)}} </td>
-            <td> {{getMedian(f)}} </td>
-            <td> {{getHigh(f)}} </td>
+        <tr *ngFor="let f of forecast;">
+            <td> {{f.companyMedian}} </td>
+            <td> {{f.median}} </td>
+            <td> {{f.high}} </td>
         </tr>
     </tbody>
 </table>

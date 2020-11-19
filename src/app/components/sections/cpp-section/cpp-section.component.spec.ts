@@ -1,20 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { CppSectionComponent } from './cpp-section.component';
 
-import { ScDataComponent } from './sc-data.component';
-
-describe('ScDataComponent', () => {
-  let component: ScDataComponent;
-  let fixture: ComponentFixture<ScDataComponent>;
+describe('CppDataComponent', () => {
+  let component: CppSectionComponent;
+  let fixture: ComponentFixture<CppSectionComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ScDataComponent ]
+      declarations: [ CppSectionComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ScDataComponent);
+    fixture = TestBed.createComponent(CppSectionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

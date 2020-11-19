@@ -1,19 +1,16 @@
-<form [formGroup]="forecastForm">
-    <table class="mat-elevation-z8">
+<table class="mat-elevation-z8">
 
-        <thead>
-            <tr>
-                <td>{{title}}</td>
-                <td>Source</td>
-            </tr>
-        </thead>
+    <thead>
+        <tr>
+            <td>{{columnTitle}}</td>
+            <td>Source</td>
+        </tr>
+    </thead>
 
-        <tbody formArrayName="forecastFormArray">
-            <tr *ngFor="let f of forecast.controls; let i = index;" [formGroupName]="i">
-                <td>  <input matInput type="text" formControlName={{formControlName}}> </td>
-                <td> {{f.get('source').value}} </td>
-            </tr>
-        </tbody>
-    </table>
-
-</form>
+    <tbody>
+        <tr *ngFor="let f of forecast;">
+            <td> <input type="text" (keyup)="onQuantityChange(f.id, $event)" value="{{f.quantity}}"></td>
+            <td> {{f.source}} </td>
+        </tr>
+    </tbody>
+</table>

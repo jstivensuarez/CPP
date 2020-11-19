@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormArray, FormGroup } from '@angular/forms';
 import { Forecast } from '../../cpp-tool/dto/forecast';
+import { GenericForecast } from '../../cpp-tool/dto/generic-forecast';
 
 export interface Country {
   flag: string,
@@ -15,7 +16,7 @@ export interface Country {
 export class CountriesComponent implements OnInit {
 
   displayedColumns: string[] = ['flag', 'code'];
-  @Input() forecast: FormArray;
+  @Input() forecast: GenericForecast[];
   
   constructor() { }
   ngOnInit(): void {

@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormArray, FormGroup } from '@angular/forms';
+import { GenericForecast } from '../../cpp-tool/dto/generic-forecast';
 
 
 @Component({
@@ -10,19 +11,16 @@ import { FormArray, FormGroup } from '@angular/forms';
 export class QuantityComponent implements OnInit {
 
   displayedColumns: string[] = ['subjects', 'source'];
-  @Input() forecast: FormArray;
-  @Input() forecastForm: FormGroup;
-  @Input() isSiteCost: Boolean;
+  @Input() forecast: GenericForecast[];
+  @Input() columnTitle: string;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  get title() {
-    return `Number of ${this.isSiteCost ? "Sites" : "Subjects"}`
-  }
-
-  get formControlName(){
-    return this.isSiteCost ? "sites" : "subjects"
+  onQuantityChange(id: number, event: any){
+    const forecastReference = this.forecast.find(f => f.id == id);
+    forecastReference.quantity = event.target.value;
   }
 }

@@ -4,8 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CountriesComponent } from './components/blocks/countries/countries.component';
-import { CppDataComponent } from './components/sections/cpp-data/cpp-data.component';
-import { ScDataComponent } from './components/sections/sc-data/sc-data.component';
+import { CppSectionComponent } from './components/sections/cpp-section/cpp-section.component';
 import { TotalsComponent } from './components/sections/totals/totals.component';
 import { CppToolComponent } from './components/cpp-tool/cpp-tool.component';
 import { QuantityComponent } from './components/blocks/quantity/quantity.component';
@@ -48,8 +47,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     CountriesComponent,
-    CppDataComponent,
-    ScDataComponent,
+    CppSectionComponent,
     TotalsComponent,
     CppToolComponent,
     QuantityComponent,
