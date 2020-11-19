@@ -1,0 +1,7 @@
+.row-header{
+    background-color:rgb(209 241 255);
+    width: 1060px;
+    z-index: -1;
+    position: absolute;
+    height: 23px;
+}

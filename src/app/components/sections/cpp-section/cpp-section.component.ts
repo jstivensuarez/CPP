@@ -5,7 +5,7 @@ import { GenericForecast } from '../../cpp-tool/dto/generic-forecast';
 @Component({
   selector: 'app-cpp-section',
   templateUrl: './cpp-section.component.html',
-  styleUrls: ['./cpp-section.component.css']
+  styleUrls: ['./cpp-section.component.css', './cpp-section.component.css']
 })
 export class CppSectionComponent implements OnInit {
 
