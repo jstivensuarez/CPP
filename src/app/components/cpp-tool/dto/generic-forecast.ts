@@ -1,8 +1,7 @@
 export interface GenericForecast{
-    id: number,
-    countryFlag: string,
-    countryCode: string,
-    quantity: number,
+    flag: string,
+    code: string,
+    number: number,
     source: string,
     companyMedian: number,
     median: number,

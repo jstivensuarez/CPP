@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { FormArray, FormGroup } from '@angular/forms';
 import { GenericForecast } from '../../cpp-tool/dto/generic-forecast';
 
 @Component({
@@ -11,7 +10,7 @@ export class CppSectionComponent implements OnInit {
 
   @Input() forecast: GenericForecast[];
   @Input() title: string;
-  @Input() quantityColumnTitle: string;
+  @Input() numberColumnTitle: string;
 
   constructor() { }
 
@@ -31,9 +30,9 @@ export class CppSectionComponent implements OnInit {
   get totals(){
     return this.forecast.map(f => (
       {
-        companyMedian: f.companyMedian * f.quantity,
-        median: f.median * f.quantity,
-        high: f.high * f.quantity
+        companyMedian: f.companyMedian * f.number,
+        median: f.median * f.number,
+        high: f.high * f.number
       }
     ))
   }
